@@ -4,7 +4,7 @@ import { Flex, Heading, Text, Image } from "@chakra-ui/react";
 
 import { IconProps } from "@/components";
 
-const About = () => {
+export default function AboutMe() {
   return (
     <Flex
       as="main"
@@ -16,7 +16,7 @@ const About = () => {
     >
       <Flex as="section" flexDir="column" width="300px">
         <Heading>
-          Hi, I Am
+          Hi, I Am{" "}
           <Text as="span" display="block" color="blue.200">
             Web Developer
           </Text>
@@ -41,6 +41,4 @@ const About = () => {
       </div>
     </Flex>
   );
-};
-
-export default About;
+}

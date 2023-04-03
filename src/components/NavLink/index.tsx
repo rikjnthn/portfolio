@@ -15,6 +15,7 @@ const NavLink = ({ path, value }: LinkType) => {
     <StyledLink
       as={Link}
       href={path}
+      data-isactive={isAcitve}
       width={`${isSmallerThan780 ? "fit-content" : "28"}`}
       height="10"
       display="flex"

@@ -9,7 +9,6 @@ const Portfolio = ({
 }) => {
   return (
     <Container as="section" className="full-height" ref={portfolioRef}>
-      <Container as="section" color="white"></Container>
     </Container>
   );
 };
