@@ -9,7 +9,8 @@ export default function AboutMe() {
     <Flex
       as="main"
       className="full-height opacity-animation"
-      justifyContent="center"
+      justifyContent="space-between"
+      padding={10}
       alignItems="center"
       color="white"
       flexWrap="wrap"
