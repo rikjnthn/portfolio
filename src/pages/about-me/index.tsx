@@ -10,7 +10,7 @@ export default function AboutMe() {
       as="main"
       className="full-height opacity-animation"
       justifyContent="space-between"
-      padding={10}
+      paddingInline={{base: '10', md: '3rem'}}
       alignItems="center"
       color="white"
       flexWrap="wrap"
