@@ -3,10 +3,12 @@ export interface LinkType {
   value: string;
 };
 
-export interface ProjectImageType {
+export interface ProjectType {
   path: string;
   imgPath: string;
   alt: string;
+  title: string;
+  description: string;
 }
 
 export interface IconComponentsType {

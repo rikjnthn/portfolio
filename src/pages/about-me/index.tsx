@@ -9,7 +9,7 @@ export default function AboutMe() {
     <Flex
       as="main"
       className="full-height opacity-animation"
-      justifyContent="center"
+      justifyContent="space-around"
       alignItems="center"
       color="white"
       flexWrap="wrap"
@@ -26,7 +26,7 @@ export default function AboutMe() {
         <Flex alignItems="center" flexDir="row" gap="5">
           <IconProps
             iconPath="WhatsApp.svg"
-            href="https://wa.me/081385160823"
+            href="https://wa.me/+6281385160823"
             alt="WhatsApp"
           />
           <IconProps

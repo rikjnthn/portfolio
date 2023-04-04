@@ -7,7 +7,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import { HTMLHead, Portfolio, ProjectImage } from "@/components";
+import { HTMLHead, Portfolio } from "@/components";
 
 export default function Home() {
   const portfolioRef = useRef<HTMLDivElement>(null);
