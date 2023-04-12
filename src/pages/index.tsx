@@ -7,7 +7,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import { HTMLHead, Portfolio } from "@/components";
+import { Portfolio } from "@/components";
 
 export default function Home() {
   const portfolioRef = useRef<HTMLDivElement>(null);
@@ -16,7 +16,6 @@ export default function Home() {
 
   return (
     <>
-      <HTMLHead />
       <Container as="main" className="opacity-animation" maxWidth="full">
         <Flex
           as="section"
