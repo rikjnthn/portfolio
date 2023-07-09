@@ -5,7 +5,7 @@ export const ProjectBody: Array<ProjectType> = [
     imgPath: "weather-website.png",
     href: "https://weather-web-wine.vercel.app",
     description: `
-      I build this website using Next JS and Chakra UI for styling. In this website, you can use it to see weather prediction.
+      I build this website using Next JS and Chakra UI for styling. On this website, you can use it to see weather predictions.
     `,
     title: "Weather Website",
   },
@@ -13,7 +13,7 @@ export const ProjectBody: Array<ProjectType> = [
     imgPath: "company-profile.jpg",
     href: "https://company-profile-vert.vercel.app",
     description: `
-      In this website, I use Next JS and Tailwind CSS to build it. This website has home, product, and contact page. 
+      On this website, I use Next JS and Tailwind CSS to build it. This website has a home, product, and contact page. 
     `,
     title: "Company Profile",
   },
@@ -21,7 +21,7 @@ export const ProjectBody: Array<ProjectType> = [
     imgPath: "note-web.jpg",
     href: "https://note-web-nu.vercel.app",
     description: `
-      This note website can be use to write a simple note. Technology that I use are Next JS, CSS module, and PocketBase.
+      This note website can be used to write a simple note. Technology that I use is Next JS, CSS module, and PocketBase.
     `,
     title: "Note Web",
   },
