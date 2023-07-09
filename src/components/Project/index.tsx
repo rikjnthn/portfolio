@@ -6,32 +6,32 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 
 import { ProjectType } from "@/types";
 
-const Project = ({ path, imgPath, alt, description, title }: ProjectType) => (
-  <>
-    <Flex
-      width="max"
-      gap={{ base: "1rem", md: "10%" }}
-      justifyContent='space-around'
-      alignItems="center"
-      flexDirection={{base: 'column', lg: 'row'}}
-      color="white"
-    >
-      <Link href={path} target="_blank">
-        <Image
-          src={`/${imgPath}`}
-          alt={alt}
-          width="500"
-          height="500"
-          quality="100"
-          loading="lazy"
-        />
-      </Link>
+const Project = ({ href, imgPath, description, title }: ProjectType) => (
+  <Flex
+    width="full"
+    gap={{ base: "1rem", sm: "4rem" }}
+    justifyContent="center"
+    alignItems="center"
+    flexDirection={{ base: "column", lg: "row" }}
+    color="white"
+  >
+    <Link href={href} target="_blank">
+      <Image
+        className="project-image"
+        src={`/${imgPath}`}
+        alt={title}
+        width={400}
+        height={400}
+        quality={100}
+      />
+    </Link>
 
-      <Flex flexDirection='column' width="md" height="250">
-        <Heading marginBottom="10" textAlign='center'>{title}</Heading>
-        <Text textAlign="justify">{description}</Text>
-      </Flex>
+    <Flex flexDirection="column" width={{ base: "62", sm: "sm", md: "md" }}>
+      <Heading marginBottom="10" textAlign="center">
+        {title}
+      </Heading>
+      <Text textAlign="center">{description}</Text>
     </Flex>
-  </>
+  </Flex>
 );
 export default Project;

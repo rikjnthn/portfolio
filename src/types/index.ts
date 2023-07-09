@@ -4,9 +4,8 @@ export interface LinkType {
 };
 
 export interface ProjectType {
-  path: string;
+  href: string;
   imgPath: string;
-  alt: string;
   title: string;
   description: string;
 }

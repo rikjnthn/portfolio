@@ -1,22 +1,21 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
-import { Flex, Heading, useMediaQuery } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 
 import Hamburger from "./Hamburger";
 import Nav from "./Nav";
 
 const Navigation = () => {
-  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
-
   const [clicked, setClicked] = useState<boolean>(false);
 
   return (
     <Flex
       as="header"
-      height="20"
+      height={{ base: "12", sm: "16" }}
       justifyContent="space-between"
       alignItems="center"
-      paddingInline="20"
+      paddingInline={{ base: "10", sm: "20" }}
       backgroundColor="customBlack"
       color="white"
       position="sticky"
@@ -26,13 +25,13 @@ const Navigation = () => {
       zIndex="99"
     >
       <div>
-        <Heading>Erik Jonathan</Heading>
+        <Heading as={Link} href="/" fontSize={{ base: "20", sm: "30" }}>
+          Erik Jonathan
+        </Heading>
       </div>
 
       <div>
-        {isSmallerThan780 && (
-          <Hamburger clicked={clicked} setClicked={setClicked} />
-        )}
+        <Hamburger clicked={clicked} setClicked={setClicked} />
 
         <Nav clicked={clicked} />
       </div>

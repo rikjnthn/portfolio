@@ -5,15 +5,15 @@ import { Flex, useMediaQuery } from "@chakra-ui/react";
 import { NavLink } from "@/components";
 
 const Nav = ({ clicked }: { clicked: boolean }) => {
-  const [isSmallerThan780] = useMediaQuery("(max-width: 780px)");
+  const [isSmallerThan768] = useMediaQuery("(max-width: 768px)");
   return (
     <Flex
       as="nav"
-      display={`${isSmallerThan780 ? (clicked ? "" : "none") : "flex"}`}
+      display={`${isSmallerThan768 ? (clicked ? "" : "none") : "flex"}`}
       gap="2rem"
       marginLeft="auto"
       fontSize="sm"
-      className={`${isSmallerThan780 ? "navbar" : ""}`}
+      className="navbar"
     >
       <NavLink path="/" value="My Portfolio" />
       <NavLink path="/about-me" value="About me" />

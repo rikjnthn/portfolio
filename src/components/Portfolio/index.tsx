@@ -13,22 +13,16 @@ const Portfolio = ({
   return (
     <Flex
       as="section"
-      className="full-height"
+      flexDir="column"
+      gap="20"
       justifyContent="center"
+      alignItems="start"
       ref={portfolioRef}
       paddingBlock="20"
+      paddingInline={{base: "10",md: "20"}}
     >
-      {ProjectBody.map(({ alt, description, imgPath, path, title }) => {
-        return (
-          <Project
-            key={imgPath}
-            alt={alt}
-            description={description}
-            imgPath={imgPath}
-            path={path}
-            title={title}
-          />
-        );
+      {ProjectBody.map((props) => {
+        return <Project key={props.imgPath} {...props} />;
       })}
     </Flex>
   );
