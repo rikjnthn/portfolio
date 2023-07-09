@@ -2,12 +2,11 @@ import React from "react";
 
 import { Flex, Heading, Text, Image } from "@chakra-ui/react";
 
-import { HTMLHead, IconProps } from "@/components";
+import { IconProps } from "@/components";
 
 export default function AboutMe() {
   return (
     <>
-      <HTMLHead />
       <Flex
         as="main"
         className="full-height opacity-animation"
